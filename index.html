@@ -8,46 +8,69 @@
   </head>
   <body>
     <div class="container">
-      <h2 class="profile-title">Profile</h2>
-      <div class="image">
-        <img src="no-image.jpg">
-      </div>
-      <form class="input-form" action="">
-        <div class="column-inputs">
-          <div class="info">
-            <label for="name">Name </label>
-            <input type="text" name="name" id="name">
-          </div>
-          <div class="info">
-            <label for="title">Title </label>
-            <input type="text" name="title" id="title">
-          </div>
-          <div class="info">
-            <label for="company">Company </label>
-            <input type="text" name="company" id="company">
-          </div>
-          <div class="info">
-            <label for="phone">Phone </label>
-            <input type="text" name="phone" id="phone">
-          </div>
-          <div class="info">
-            <label for="url">URL </label>
-            <input type="text" name="url" id="url">
-          </div>
-          <div class="info">
-            <label for="linkedin">Linkedin.com/ </label>
-            <input type="text" name="linkedin" id="linkedin">
-          </div>
-          <div class="info">
-            <label for="twitter">Twitter.com/ </label>
-            <input type="text" name="twitter" id="twitter">
-          </div>
-          <div class="info">
-            <label for="facebook">Facebook.com/ </label>
-            <input type="text" name="facebook" id="facebook">
-          </div>
+      <div class="display-page closed">
+        <h2 class="profile-title">Profile</h2>
+        <div class="image">
+          <img src="no-image.jpg">
         </div>
-      </form>
+      </div>
+
+      <div class="input-page open">
+        <h2>vCard.Link</h2>
+        <form class="input-form" action="">
+          <div class="info-input">
+            <label for="card-info">Card Info</label>
+            <input type="text" name="card-info" id="card-info" placeholder="Card name">
+          </div>
+          <div class="info-input">
+            <label for="email">Authentication</label>
+            <input type="email" name="email" id="email" placeholder="Email address">
+            <input type="password" name="password" id="password" placeholder="Password">
+          </div>
+          <div class="info-input">
+            <label for="contact">Contact</label>
+            <input type="text" name="title" id="title" placeholder="Title">
+            <input type="text" name="suffix" id="suffix" placeholder="Suffix">
+          </div>
+          <div class="info-input">
+            <input type="text" name="first-name" id="first-name" placeholder="First name">
+          </div>
+          <div class="info-input">
+            <input type="text" name="last-name" id="last-name" placeholder="Last name">
+          </div>
+          <div class="info-input">
+            <label for="birthday">Birthday</label>
+            <input type="text" name="birthday" id="birthday" placeholder="DD-MM-YYYY">
+          </div>
+          <div class="info-input">
+            <label for="occupation">Occupation</label>
+            <input type="text" name="text" id="text" placeholder="Organization">
+          </div>
+          <div class="info-input">
+            <input type="text" name="position" id="position" placeholder="Position title">
+          </div>
+          <div class="info-input">
+            <div>Add phone</div>
+            <div>Add email</div>
+            <div>Add website</div>
+            <div>Add address</div>
+          </div>
+          <div class="info-input">
+            <label for="note">Note</label>
+            <textarea name="note" id="note" rows="8" cols="50"></textarea>
+          </div>
+          <div class="info-input">
+            <button class="create-card">Create Card</button>
+          </div>
+          <div class="info-input">
+            <p>Contact information submitted will be made available using the link to your vCard. We will not actively share your
+              information with other parties.</p>
+          </div>
+        </form>
+        <div class="bottom-taskbar">
+          <p>Got feedback? Let us know.</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
