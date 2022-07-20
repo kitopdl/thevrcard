@@ -2,8 +2,123 @@
 <html>
   <head>
     <title>thevrcard</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <p>Hello World</p>
+    <div class="container">
+      <div class="display-page closed">
+        <h2 class="profile-title">Profile</h2>
+        <div class="image">
+          <img src="no-image.jpg">
+        </div>
+      </div>
+
+      <div class="input-page open">
+        <h2 class="vcard-title">vCard.Link</h2>
+        <form class="input-form" action="">
+          <div class="columns">
+            <div class="info-input">
+              <div class="column-one">
+                <label for="card-info">Card Info</label>
+              </div>
+              <div class="column-two">
+                <input type="text" name="card-info" id="card-info" placeholder="Card name">
+              </div>
+            </div>
+            <div class="info-input">
+              <div class="column-one">
+                <label for="email">Authentication</label>
+              </div>
+              <div class="column-two">
+                <input type="email" name="email" id="email" placeholder="Email address">
+                <input type="password" name="password" id="password" placeholder="Password">
+              </div>
+            </div>
+            <div class="info-input">
+              <div class="column-one">
+                <label for="contact">Contact</label>
+              </div>
+              <div class="column-two">
+                <input type="text" name="title" id="title" placeholder="Title">
+                <input type="text" name="suffix" id="suffix" placeholder="Suffix">
+              </div>
+            </div>
+            <div class="info-input">
+              <div class="column-one">
+
+              </div>
+              <div class="column-two">
+                <input type="text" name="first-name" id="first-name" placeholder="First name">
+              </div>
+            </div>
+            <div class="info-input">
+              <div class="column-one">
+
+              </div>
+              <div class="column-two">
+                <input type="text" name="last-name" id="last-name" placeholder="Last name">
+              </div>
+            </div>
+            <div class="info-input">
+              <div class="column-one">
+                <label for="birthday">Birthday</label>
+              </div>
+              <div class="column-two">
+                <input type="text" name="birthday" id="birthday" placeholder="DD-MM-YYYY">
+              </div>
+            </div>
+            <div class="info-input">
+              <div class="column-one">
+
+              </div>
+              <div class="column-two">
+                <input type="text" name="position" id="position" placeholder="Position title">
+              </div>
+            </div>
+            <div class="info-input">
+              <div class="column-one">
+
+              </div>
+              <div class="column-two">
+                <div>Add phone</div>
+                <div>Add email</div>
+                <div>Add website</div>
+                <div>Add address</div>
+              </div>
+            </div>
+            <div class="info-input">
+              <div class="column-one">
+                <label for="note">Note</label>
+              </div>
+              <div class="column-two">
+                <textarea name="note" id="note" rows="8" cols="50"></textarea>
+              </div>
+            </div>
+            <div class="info-input">
+              <div class="column-one">
+
+              </div>
+              <div class="column-two">
+                <button class="create-card">Create Card</button>
+              </div>
+            </div>
+            <div class="info-input">
+              <div class="column-one">
+
+              </div>
+              <div class="column-two">
+                <p>Contact information submitted will be made available using the link to your vCard. We will not actively share your
+                  information with other parties.</p>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="bottom-taskbar">
+          <p>Got feedback? Let us know.</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
